@@ -25,6 +25,7 @@ body {
     gap: 10px;
     padding: 5px;
     justify-content: center;
+    margin-top: -30px;
 }
 
 .gridPiece {
@@ -41,4 +42,44 @@ body {
 
 .gridPiece:hover {
     background-color: rgb(202, 201, 201);
+}
+
+#blurScreen {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grayOut {
+    content-visibility: hidden;
+}
+
+.winScreen {
+    background-color: white;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+.winScreen h2 {
+    font-size: 45px;
+    margin: -15px;
+}
+
+.winScreen button {
+    width: 55%;
+    height: 30%;
+    font-size: 38px;
+    border-radius: 20px;
+    background-color: rgb(0, 255, 242);
+    border: 1px solid rgb(0, 255, 242);
 }
